@@ -7,26 +7,53 @@ class Node:
 
 class DoublyCircularLinkedList:
     def __init__(self):
-        self.head = None
         self.count = 0
+        self.front = None
+        self.end = None
 
     def add_at_tail(self, data) -> bool:
-        # Write code here
+        temp = Node(data)
+        temp.data = data
+        temp.previous = end
+        temp.next = None
+        
+        if end == None:
+            front = temp
+        else:
+            end.next = temp
+        end = temp
+        
+        return True
 
     def add_at_head(self, data) -> bool:
-        # Write code here
+        temp = Node(data) 
+        temp.data = data
+        temp.previous = None
+        temp.next = front
+        
+        if front == None:
+            end = temp
+        else:
+            front.prev = temp
+        front = temp
+        
+        return True
 
-    def add_at_index(self, index, data) -> bool:
-        # Write code here
+    def add_at_index(self, index, data) -> bool:        
+        trav = self.front
+        
+        return True
+
+
 
     def get(self, index) -> int:
-        # Write code here
+        return -1
 
     def delete_at_index(self, index) -> bool:
-        # Write code here
+        return True
 
     def get_previous_next(self, index) -> list:
-        # Write code here
+        return -1
 
 
 # Do not change the following code
