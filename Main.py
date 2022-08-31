@@ -19,8 +19,8 @@ class DoublyCircularLinkedList:
             self.head.previous = new_node
             new_node.next = self.head
         else:
-            self.end = new_node
-        self.head = new_node
+            self.head = new_node
+        self.end = new_node
         self.count += 1
         return True
 
