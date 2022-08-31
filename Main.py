@@ -11,12 +11,6 @@ class DoublyCircularLinkedList:
         self.front = None
         self.end = None
         
-    def insert_after(self, ref_node, new_node):
-        new_node.prev = ref_node
-        new_node.next = ref_node.next
-        new_node.next.prev = new_node
-        ref_node.next = new_node
-
     def add_at_tail(self, data) -> bool:
         new_node = Node(data)
         if self.count > 0:
